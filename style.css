@@ -1,0 +1,68 @@
+
+body {
+    background-color: #F3F7F7;
+}
+
+
+
+#header1 {
+
+    font-size: 55px;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    margin : 100px;
+    color : #84DDBD;
+    justify-content: center;
+}
+
+#titles {
+    text-align: center;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top : -100px; 
+}
+
+#links {
+    text-align: center;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position : relative;
+    top : -200px;
+}
+
+#border {
+    background-color: #21160E;
+    align-items: center;
+    height : 10px;
+    margin :200px;
+    height : 60px;
+    position: relative;
+    top : -625px;
+    
+}
+
+#container {
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    flex-direction : column;
+    background-color : white;
+    margin : 200px;
+    height : 400px;
+    padding-left : 50px;
+    padding-right : 50px;
+    border : 2px solid #21160E
+}
+
+#HomeButton {
+    font-size: 35px;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color : #84DDBD;
+    position : relative;
+    top: -300px;
+    left : -275px;
+    flex-flow: column;
+
+}
