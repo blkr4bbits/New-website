@@ -7,7 +7,28 @@ body {
     overflow-x: hidden;
     }
 
-.grid-container {
+div.ui-menu li {
+  list-style: none;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  padding-left: 14px;
+}
+
+p {
+    text-align : center;
+}
+
+/* .grid-container {
     background-color : #a19d9d;
     max-width: 1500px;
     margin: 0 auto;
@@ -20,4 +41,10 @@ body {
     text-align: center;
     padding: 20px 0;
 }
+
+body {
+  cursor: url("C:\Users\Joshua Green\Downloads\Wii Cursor.cur"), auto;
+}
+
+*/
 
