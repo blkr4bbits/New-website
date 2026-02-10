@@ -5,7 +5,7 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-y: hidden;
     overflow-x: hidden;
-    background: rgb(235, 159, 213);
+    background: rgb(255, 249, 253);
     }
 
 div.ui-menu li {
@@ -17,7 +17,7 @@ ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  text-align: center;
+  text-align: right;
 }
 
 li {
@@ -27,25 +27,18 @@ li {
 
 p {
     text-align : center;
+    font-size : 36px;
 }
 
-/* .grid-container {
-    background-color : #a19d9d;
-    max-width: 1500px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px 300px 300px 300px;
-    scroll-snap-type: x mandatory;
-}
-.grid-container > div {
-    background-color: #eee;
-    text-align: center;
-    padding: 20px 0;
+.lowermenu {
+  text-align: right;
 }
 
-body {
-  cursor: url("C:\Users\Joshua Green\Downloads\Wii Cursor.cur"), auto;
+button{
+  border:none;
+  background: blue;
+  color: white;
+  cursor: pointer;
+  transition: 150ms ease;
+
 }
-
-*/
-
