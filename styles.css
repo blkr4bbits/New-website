@@ -5,7 +5,7 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-y: hidden;
     overflow-x: hidden;
-    background: rgb(235, 159, 213);
+    background: rgb(255, 249, 253);
     }
 
 div.ui-menu li {
@@ -17,7 +17,7 @@ ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  text-align: center;
+  text-align: right;
 }
 
 li {
@@ -27,7 +27,17 @@ li {
 
 p {
     text-align : center;
+    font-size : 36px;
 }
+
+.lowermenu {
+  text-align: right;
+}
+
+
+
+
+
 
 /* .grid-container {
     background-color : #a19d9d;
@@ -48,4 +58,3 @@ body {
 }
 
 */
-
