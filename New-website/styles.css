@@ -1,0 +1,155 @@
+:root {
+    --primary-color: rgb(69, 69, 250);
+    --secondary-color: rgb(255, 255, 255);
+    --third-color: rgb(207, 224, 255);
+    --text-color: #333;
+}
+
+.dark-mode {
+    --primary-color: rgb(172, 207, 253);
+    --secondary-color: rgb(15, 16, 56);
+    --third-color: rgb(63, 110, 199);
+    --text-color: #dadada;
+}
+
+body {
+    margin : 0px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: var(--third-color);
+    }
+
+div.ui-menu li {
+  list-style: none;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* buttons */
+.work-button:hover{
+  width: 0;
+  height: 0;
+  background-color: var(--primary-color);
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+
+.home-button:hover{
+  background-color: var(--primary-color);
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+.about-button:hover{
+  background-color: var(--primary-color);
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+.resume-button:hover{
+  background-color: var(--primary-color);
+  font-size: 17px;
+  border-radius: 15px;
+}
+/* end of buttons */
+
+/* box-shadow*/
+
+.card {
+  width: 700px;
+  height: 550px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba (0, 0, 0, 0.2);
+  margin: 60px auto;
+  overflow: hidden;
+
+}
+
+.card-header {
+  background: #3f3f3f;
+  color: var(--secondary-color);
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+/*end of box-shadow*/
+
+li {
+  display: inline;
+  padding-left: 14px;
+}
+
+p {
+    margin: 0px;
+    text-align : center;
+    font-size : 36px;
+}
+
+.lowermenu {
+  text-align: right;
+}
+
+
+.text-primary { 
+  color: var(--primary-color);
+  font-weight : bold;
+}
+
+.text-center{
+  text-align: center;
+  margin-top: 100px;
+  padding: 25px;
+}
+
+.Copyright-title{
+  margin-top : 40px;
+  font-size: 10px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+#theme-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#theme-switch svg {
+  fill: var(--secondary-color);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.dark-mode #theme-switch svg:first-child {
+  display: none;
+}
+
+.dark-mode #theme-switch svg:last-child {
+  display: block;
+}
