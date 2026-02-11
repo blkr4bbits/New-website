@@ -3,6 +3,7 @@
     --secondary-color: rgb(255, 255, 255);
     --third-color: rgb(207, 224, 255);
     --text-color: #333;
+    --main : black;
 }
 
 .dark-mode {
@@ -10,6 +11,7 @@
     --secondary-color: rgb(15, 16, 56);
     --third-color: rgb(63, 110, 199);
     --text-color: #dadada;
+    --main : white;
 }
 
 body {
@@ -114,6 +116,7 @@ p {
   text-align: center;
   margin-top: 100px;
   padding: 25px;
+  color : var(--main);
 }
 
 .Copyright-title{
@@ -122,6 +125,9 @@ p {
   text-align: center;
   opacity: 0.6;
 }
+
+
+/*theme switch*/
 
 #theme-switch {
   position: fixed;
@@ -136,6 +142,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: color 2s ease-in;
 }
 
 #theme-switch svg {
