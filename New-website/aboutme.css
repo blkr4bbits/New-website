@@ -1,3 +1,12 @@
+:root {
+    --primary-color: rgb(236, 25, 78);
+    --secondary-color: rgb(255, 255, 255);
+    --third-color: rgb(255, 229, 237);
+    --text-color: rgb(255, 255, 255);
+    --main : black;
+}
+
+
 
 body {
     margin : 30px;
@@ -42,13 +51,12 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #ffffff;
-  color: rgb(255, 255, 255);
+  color: var(--primary-color);
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(38, 76, 182);
+  background-color: var(--primary-color);
   color: white;
   transform: rotateY(180deg);
 }
@@ -56,3 +64,4 @@ body {
 .githublink:hover {
     color: white;
 }
+

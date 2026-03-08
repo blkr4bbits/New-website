@@ -1,0 +1,11 @@
+const showPopup = document.querySelector('.work-button');
+const popupcontainer = document.querySelector('.popup-container');
+const closeBtn = document.querySelector('.close-button');
+
+showPopup.onclick = () => {
+    popupcontainer.classList.add('active');
+};
+
+closeBtn.onclick = () => {
+    popupcontainer.classList.remove('active');
+};

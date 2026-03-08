@@ -21,3 +21,4 @@ themeSwitch.addEventListener("click", () => {
 });
 
 // Dark mode on button click and apply theme that is stored on local storage
+

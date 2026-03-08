@@ -1,15 +1,15 @@
 :root {
-    --primary-color: rgb(243, 127, 73);
+    --primary-color: rgb(236, 25, 78);
     --secondary-color: rgb(255, 255, 255);
-    --third-color: rgb(252, 196, 158);
+    --third-color: rgb(255, 229, 237);
     --text-color: rgb(255, 255, 255);
     --main : black;
 }
 
 .dark-mode {
-    --primary-color: rgb(253, 93, 18);
-    --secondary-color: rgb(165, 41, 0);
-    --third-color: rgb(199, 102, 63);
+    --primary-color: rgb(255, 152, 183);
+    --secondary-color: rgb(116, 1, 39);
+    --third-color: rgb(189, 47, 89);
     --text-color: #dadada;
     --main : white;
 }
@@ -40,11 +40,10 @@ ul {
 
 /* buttons */
 .work-button:hover{
-  width: 0;
-  height: 0;
   background-color: var(--primary-color);
   font-size: 17px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 
@@ -52,19 +51,68 @@ ul {
   background-color: var(--primary-color);
   font-size: 17px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .about-button:hover{
   background-color: var(--primary-color);
   font-size: 17px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .resume-button:hover{
   background-color: var(--primary-color);
   font-size: 17px;
   border-radius: 15px;
+  cursor: pointer;
 }
+
+/*
+.popup-container {
+  position: absolute;
+  background-color: seagreen;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup-container.active {
+  opacity: 1;
+  pointer-events: auto;
+  transition: 4s ease;
+}
+
+.popup-container .popup-box{
+  width: 100px;
+  background: white;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding : 30px;
+  transform: scale(0);
+
+}
+
+.popup-container.active .popup-box{
+    transform: scale(1);
+    transition: .4s ease;
+    transition-delay: .25s;
+}
+
+
+.popup-box .close-button{
+  width: 100px;
+  height: 45px;
+  background: red;
+  border-radius: 10px;
+  cursor: pointer;
+}
+*/
+
 /* end of buttons */
 
 /* box-shadow*/
@@ -161,3 +209,5 @@ p {
 .dark-mode #theme-switch svg:last-child {
   display: block;
 }
+
+
