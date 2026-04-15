@@ -1,9 +1,18 @@
+@font-face {
+  font-family: 'Persona3';
+  src: url('../../fonts/BMSPA___.TTF') format('truetype');
+}
+
+p {
+  font-family: 'Persona3', sans-serif;
+}
+
 :root {
-    --primary-color: rgb(236, 25, 78);
-    --secondary-color: rgb(255, 255, 255);
-    --third-color: rgb(255, 229, 237);
-    --text-color: rgb(255, 255, 255);
-    --main : black;
+    --primary-color: #79d7fd;
+    --secondary-color: #00bbfa;
+    --third-color: #001736;
+    --text-color: #00183e;
+    --main : #ffc54a;
 }
 
 .dark-mode {
@@ -20,7 +29,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-y: hidden;
     overflow-x: hidden;
     background: var(--third-color);
@@ -129,7 +137,7 @@ ul {
 }
 
 .card-header {
-  background: #3f3f3f;
+  background: rgb(26, 26, 26);
   color: var(--secondary-color);
   padding: 12px 20px;
   font-size: 14px;
