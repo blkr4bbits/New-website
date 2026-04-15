@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Persona3';
-  src: url('../../fonts/BMSPA___.TTF') format('truetype');
+  src: url("../fonts/BMSPA___.TTF") format("truetype");
 }
 
 p {

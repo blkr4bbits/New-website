@@ -8,46 +8,53 @@
     <title>HOME</title>
     <link rel="stylesheet" href="styles.css">
     <script src= "darkmode.js" defer></script>
-    <script src = "popup.js" defer></script>
+    
+   <!-- <script src = "popup.js" defer></script> -->
 
 </head>
 
 
 
 <body>
-    <video id="bg-video" autoplay muted playsinline></video>
 
-    <script>
-const video = document.getElementById("bg-video");
+    <!-- background video -->
+    
+        <video id="bg-video" autoplay muted playsinline></video>
 
-const videos = [
-  "https://p3re.jp/resources/img/top/fv_movie1_bef3ec38c6b4ba869207fc85cf95bc78.mp4",
-  "https://p3re.jp/resources/img/top/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.mp4"
-];
+        <script>
+            const video = document.getElementById("bg-video");
 
-let index = 0;
+            const videos = [
+            "https://p3re.jp/resources/img/top/fv_movie1_bef3ec38c6b4ba869207fc85cf95bc78.mp4",
+            "https://p3re.jp/resources/img/top/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.mp4"
+            ];
 
-// load and play current video
-function playVideo(i) {
-  video.src = videos[i];
-  video.play();
-}
+            let index = 0;
 
-// when a video ends, advance logic
-video.addEventListener("ended", () => {
-  index++;
+            // load and play current video
+            function playVideo(i) {
+            video.src = videos[i];
+            video.play();
+            }
 
-  // after video 2, loop video 2 forever
-  if (index >= videos.length) {
-    index = 1; // lock to second video
-  }
+            // when a video ends, advance logic
+            video.addEventListener("ended", () => {
+            index++;
 
-  playVideo(index);
-});
+            // after video 2, loop video 2 forever
+            if (index >= videos.length) {
+                index = 1; // lock to second video
+            }
 
-// start with first video
-playVideo(0);
-</script>
+            playVideo(index);
+            });
+
+            // start with first video
+            playVideo(0);
+        </script>
+
+    <!-- theme switch button -->
+
     
     <button id = "theme-switch">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
@@ -64,11 +71,15 @@ playVideo(0);
             class = "card-body">
         </div>
 
+        <!--greeting page-->
+
         <p class="text-center">
             hi! <span class="text-primary font-Persona3">i’m Ivory</span>
-        </p> <!--greeting page-->
+        </p> 
 
-            <main id = "content" class = "hidden"></main> <!-- content for main page starts here-->
+        <!-- content for main page starts here-->
+
+            <main id = "content" class = "hidden"></main> 
 
         <div class="ui-menu">
             <ul>
@@ -84,13 +95,11 @@ playVideo(0);
     </div>
 
 
+    <!-- spinning photo-->
+    
     <div>
-        <div class=" spinner "></div> <!-- spinning photo-->
+        <div class=" spinner "></div> 
     </div>  
 
 </body>
 </html>
-
-
-  
-<!--Play : wii party-->
