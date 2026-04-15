@@ -32,6 +32,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     background: var(--third-color);
+    position: relative;
     }
 
 div.ui-menu li {
@@ -133,7 +134,8 @@ ul {
   box-shadow: 0 12px 30px rgba (0, 0, 0, 0.2);
   margin: 60px auto;
   overflow: hidden;
-
+  position: relative;
+  z-index: 1;
 }
 
 .card-header {
@@ -216,6 +218,18 @@ p {
 
 .dark-mode #theme-switch svg:last-child {
   display: block;
+}
+
+/* background video */
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 
