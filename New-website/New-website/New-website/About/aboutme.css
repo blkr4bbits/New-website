@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Persona3';
+  src: url("../Assets/fonts/BMSPA___.TTF") format("truetype");
+}
+:root {
+    --primary-color: #79d7fd;
+    --secondary-color: #0e0861, opacity: 0.8;
+    --third-color: #001736;
+    --text-color: #00183e;
+    --main : #ffc54a;
+}
+
+p {
+  font-family: 'Persona3', sans-serif;
+}
+
+.about-title {
+  text-align: center;
+  margin-top: 100px;
+  padding: 100px;
+  color : var(--primary-color);
+  font-size: 50px;
+  font-style: 'Persona3', sans-serif;
+}
