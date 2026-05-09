@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'Persona3';
-  src: url("../Assets/BMSPA__.TTF") format("truetype");
+  src: url(../New-website/Assets/BMSPA___.TTF) format("truetype");
+
+  font-family: 'SecondaryFont';
+  src: url(../Assets/FOT-Skip\ Std\ B.otf) format("opentype");
 }
 
 p {
@@ -112,6 +115,7 @@ span {
   text-transform: uppercase;
   cursor: pointer;
   transform: skew(-21deg);
+  font-family: 'SecondaryFont', sans-serif;
 }
 
 span {

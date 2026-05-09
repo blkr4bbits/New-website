@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'Persona3';
   src: url("../Assets/BMSPA___.TTF") format("truetype");
+
+  font-family: 'SecondaryFont';
+  src: url(../Assets/FOT-Skip\ Std\ B.otf) format("opentype");
 }
 
 
@@ -32,6 +35,14 @@
     --main : #ffc54a;
 }
 
+.dark-mode {
+    --primary-color: rgb(255, 152, 183);
+    --secondary-color: rgb(116, 1, 39), opacity: 0.8;
+    --third-color: rgb(189, 47, 89);
+    --text-color: #dadada;
+    --main : white;
+}
+
 
 .triangle-down {
   width: 0;
@@ -41,7 +52,7 @@
   border-top: 50px solid #ffffff;
 
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -70,8 +81,6 @@
     object-fit: cover;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
     z-index: -1;
     animation : fadeInVideo 3s ease-in forwards;
     opacity: 0;
@@ -88,16 +97,18 @@
 }
 
 .info-text {
+  font-family: 'SecondaryFont', sans-serif;
   position: absolute;
   justify-content: center;
   z-index: 1;
-  left: 50%;
-  top: 200%;
-  overflow-y: auto;
+  top: 1200px;
   color: var(--primary-color);
   opacity: 0;
   animation : Aftervideo 3s ease-in forwards;
-
+  background-color: var(--text-color);
+  width: 100%;
+  text-align: center;
+  animation-delay: 2.9s;
 }
 
 @keyframes Aftervideo {
@@ -106,3 +117,52 @@
   }
 }
 
+.info-paragraph {
+  font-family: 'SecondaryFont', sans-serif;
+  position: absolute;
+  width: 100%;            
+  min-height: 100px;      
+  display: flex;          
+  justify-content: center; 
+  align-items: center;     
+  text-align: justify;      
+  margin: 0; 
+  background-color: #ffffff; 
+  font-size: 15px; 
+  opacity: 0;
+  animation : Aftervideo 3s ease-in forwards;
+  z-index: 1;
+  color: var(--text-color);
+  animation-delay: 3s;
+}
+
+.info-list {
+  list-style-type: none
+}
+
+.selfie {
+  position: absolute;
+  bottom: 350%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  left: 60%;
+  z-index: 20;
+  animation: SelfieAnimation 1s ease-in forwards;
+  animation-delay: 2.9s;
+  opacity: 0;
+  filter: sepia(70%) saturate(300%) hue-rotate(175deg);
+  border-color: #001736;
+  border-width: 10px;
+}
+
+@keyframes SelfieAnimation {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.95;
+  }
+}
