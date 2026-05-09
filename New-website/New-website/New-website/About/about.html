@@ -8,9 +8,52 @@
     <script src= "../darkmode.js" defer></script>
 
 </html>
+
+<h1 class="about-me-text">
+            About <span class="text-primary font-Persona3">me</span>
+        </h1>
+
+<div class = "triangle-down"> </div>
+
+    <!-- background video -->
+    
+        <video id="front-video" autoplay muted playsinline></video>
+
+        <script>
+    const video = document.getElementById("front-video");
+
+    const videos = [
+        "https://p3re.jp/resources/img/top/fv_movie1_bef3ec38c6b4ba869207fc85cf95bc78.mp4",
+        "https://p3re.jp/resources/img/top/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.mp4"
+    ];
+
+    let index = 0;
+
+    function playVideo(i) {
+        video.src = videos[i];
+        video.play();
+    }
+
+    video.addEventListener("ended", () => {
+        index++;
+
+        if (index >= videos.length) {
+            index = 1;
+        }
+
+        playVideo(index);
+    });
+
+    setTimeout(() => {
+        playVideo(0);
+    }, 2000);
+</script>
+
+    
+<!--
     <div>
-        <h1  class = "about-title"> About me</h1>
-        <p> 
+        
+        <p id = "info-text"> 
             I am a aspiring creative dev and engineer who is currently working on a visual novel ! Currently, I am working to master Python 
             and I am looking to collaborate on more indie game projects !
         </p>
@@ -25,41 +68,7 @@
 
     <body>
 
-    <!-- background video -->
-    
-        <video id="bg-video" autoplay muted playsinline></video>
-
-        <script>
-            const video = document.getElementById("bg-video");
-
-            const videos = [
-            "https://p3re.jp/resources/img/top/fv_movie1_bef3ec38c6b4ba869207fc85cf95bc78.mp4",
-            "https://p3re.jp/resources/img/top/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.mp4"
-            ];
-
-            let index = 0;
-
-            
-            function playVideo(i) {
-            video.src = videos[i];
-            video.play();
-            }
-
-            
-            video.addEventListener("ended", () => {
-            index++;
-
-            
-            if (index >= videos.length) {
-                index = 1; // lock to second video
-            }
-
-            playVideo(index);
-            });
-
-            // start with first video
-            playVideo(0);
-        </script>
+-->
 
 <body>
     <title>ABOUT</title>

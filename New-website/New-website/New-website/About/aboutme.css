@@ -1,7 +1,29 @@
 @font-face {
   font-family: 'Persona3';
-  src: url("../Assets/fonts/BMSPA___.TTF") format("truetype");
+  src: url("../Assets/BMSPA___.TTF") format("truetype");
 }
+
+
+.about-me-text {
+  font-family : 'Persona3', sans-serif;
+  position: absolute;
+  z-index: -2;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 50px;
+  left: 65%;
+  top: 50%;
+  animation : FadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes FadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
 :root {
     --primary-color: #79d7fd;
     --secondary-color: #0e0861, opacity: 0.8;
@@ -10,22 +32,40 @@
     --main : #ffc54a;
 }
 
-p {
-  font-family: 'Persona3', sans-serif;
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #ffffff;
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  animation: bounce 1.4s infinite;
+
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
-.about-title {
-  text-align: center;
-  margin-top: 100px;
-  padding: 100px;
-  color : var(--primary-color);
-  font-size: 50px;
-  font-style: 'Persona3', sans-serif;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  
+  50% {
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0.6;
+  }
 }
 
 
 
-.bg-video {
+#front-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -33,4 +73,17 @@ p {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+    animation : fadeInVideo 3s ease-in forwards;
+    opacity: 0;
 }
+
+.body {
+    overflow: scroll;
+}
+
+@keyframes fadeInVideo {
+    to {
+        opacity: 1;
+    }
+}
+
