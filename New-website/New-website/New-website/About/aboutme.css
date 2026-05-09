@@ -66,12 +66,12 @@
 
 
 #front-video {
-    position: fixed;
+    position: relative;
+    object-fit: cover;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
     z-index: -1;
     animation : fadeInVideo 3s ease-in forwards;
     opacity: 0;
@@ -85,5 +85,24 @@
     to {
         opacity: 1;
     }
+}
+
+.info-text {
+  position: absolute;
+  justify-content: center;
+  z-index: 1;
+  left: 50%;
+  top: 200%;
+  overflow-y: auto;
+  color: var(--primary-color);
+  opacity: 0;
+  animation : Aftervideo 3s ease-in forwards;
+
+}
+
+@keyframes Aftervideo {
+  to {
+    opacity: 1;
+  }
 }
 

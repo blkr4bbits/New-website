@@ -20,40 +20,40 @@
         <video id="front-video" autoplay muted playsinline></video>
 
         <script>
-    const video = document.getElementById("front-video");
+        const video = document.getElementById("front-video");
 
-    const videos = [
-        "https://p3re.jp/resources/img/top/fv_movie1_bef3ec38c6b4ba869207fc85cf95bc78.mp4",
-        "https://p3re.jp/resources/img/top/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.mp4"
-    ];
+        const videos = [
+            "https://p3re.jp/resources/img/top/fv_movie1_bef3ec38c6b4ba869207fc85cf95bc78.mp4",
+            "https://p3re.jp/resources/img/top/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.mp4"
+        ];
 
-    let index = 0;
+        let index = 0;
 
-    function playVideo(i) {
-        video.src = videos[i];
-        video.play();
-    }
-
-    video.addEventListener("ended", () => {
-        index++;
-
-        if (index >= videos.length) {
-            index = 1;
+        function playVideo(i) {
+            video.src = videos[i];
+            video.play();
         }
 
-        playVideo(index);
-    });
+        video.addEventListener("ended", () => {
+            index++;
 
-    setTimeout(() => {
-        playVideo(0);
-    }, 2000);
+            if (index >= videos.length) {
+                index = 1;
+            }
+
+            playVideo(index);
+        });
+
+        setTimeout(() => {
+            playVideo(0);
+        }, 2000);
 </script>
 
     
-<!--
-    <div>
+
+    <div class = "info-text">
         
-        <p id = "info-text"> 
+        <p> 
             I am a aspiring creative dev and engineer who is currently working on a visual novel ! Currently, I am working to master Python 
             and I am looking to collaborate on more indie game projects !
         </p>
@@ -68,7 +68,7 @@
 
     <body>
 
--->
+
 
 <body>
     <title>ABOUT</title>
