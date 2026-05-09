@@ -22,6 +22,45 @@
             <li> Interested in collaborating? Contact me here: <a href="mailto:ivoryskittiesandcupcakes@gmail.com">ivoryskittiesandcupcakes@gmail.com</a></li>
         </ul>
     </div>
+
+    <body>
+
+    <!-- background video -->
+    
+        <video id="bg-video" autoplay muted playsinline></video>
+
+        <script>
+            const video = document.getElementById("bg-video");
+
+            const videos = [
+            "https://p3re.jp/resources/img/top/fv_movie1_bef3ec38c6b4ba869207fc85cf95bc78.mp4",
+            "https://p3re.jp/resources/img/top/fv_movie2_1aaf21a0de60678450744da0dbaf9ef4.mp4"
+            ];
+
+            let index = 0;
+
+            
+            function playVideo(i) {
+            video.src = videos[i];
+            video.play();
+            }
+
+            
+            video.addEventListener("ended", () => {
+            index++;
+
+            
+            if (index >= videos.length) {
+                index = 1; // lock to second video
+            }
+
+            playVideo(index);
+            });
+
+            // start with first video
+            playVideo(0);
+        </script>
+
 <body>
     <title>ABOUT</title>
 </body>

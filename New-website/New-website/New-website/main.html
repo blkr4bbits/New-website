@@ -32,17 +32,17 @@
 
             let index = 0;
 
-            // load and play current video
+            
             function playVideo(i) {
             video.src = videos[i];
             video.play();
             }
 
-            // when a video ends, advance logic
+            
             video.addEventListener("ended", () => {
             index++;
 
-            // after video 2, loop video 2 forever
+            
             if (index >= videos.length) {
                 index = 1; // lock to second video
             }
