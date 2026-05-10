@@ -1,15 +1,5 @@
 {
-"version": "2",
-"builds": [
-    {
-    "src": "**/*",
-    "use": "@vercel/static"
-    }
-],
-"routes": [
-    {
-    "src": "/(.*)",
-    "dest": "/index.html"
-    }
-]
+    "name": "new-website",
+    "version": "1.0.0",
+    "private": true
 }
