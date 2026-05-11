@@ -1,7 +1,9 @@
 @font-face {
   font-family: 'Persona3';
-  src: url(../New-website/Assets/BMSPA___.TTF) format("truetype");
+  src: url(./Assets/BMSPA___.TTF) format("truetype");
+}
 
+@font-face{
   font-family: 'SecondaryFont';
   src: url(./Assets/FOT-Skip\ Std\ B.otf) format("opentype");
 }
@@ -67,6 +69,7 @@ ul {
   text-transform: uppercase;
   cursor: pointer;
   transform: skew(-21deg);
+  font-family : 'SecondaryFont', sans-serif;
 }
 
 span {
@@ -162,6 +165,7 @@ span {
   text-transform: uppercase;
   cursor: pointer;
   transform: skew(-21deg);
+  font-family: 'SecondaryFont', sans-serif;
 }
 
 span {
@@ -208,6 +212,8 @@ span {
   text-transform: uppercase;
   cursor: pointer;
   transform: skew(-21deg);
+  font-family : 'SecondaryFont', sans-serif;
+
 }
 
 span {
@@ -300,6 +306,7 @@ p {
 .text-primary { 
   color: var(--primary-color);
   font-weight : bold;
+  font-family: 'Persona3', sans-serif;
 }
 
 .text-center{
@@ -308,6 +315,7 @@ p {
   padding: 100px;
   color : var(--main);
   font-size: 50px;
+  font-family: 'Persona3', sans-serif;
 }
 
 .Copyright-title{

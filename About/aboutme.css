@@ -1,7 +1,9 @@
 @font-face {
   font-family: 'Persona3';
   src: url("../Assets/BMSPA___.TTF") format("truetype");
+}
 
+@font-face{
   font-family: 'SecondaryFont';
   src: url(../Assets/FOT-Skip\ Std\ B.otf) format("opentype");
 }
@@ -157,24 +159,6 @@
 .info-list {
   list-style-type: none
 }
-
-/*
-.selfie {
-  position: absolute;
-  bottom: 350%;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  left: 60%;
-  z-index: 20;
-  animation: SelfieAnimation 1s ease-in forwards;
-  animation-delay: 2.9s;
-  opacity: 0;
-  filter: sepia(70%) saturate(300%) hue-rotate(175deg);
-  border-color: #001736;
-  border-width: 10px;
-}
-*/
 
 @keyframes SelfieAnimation {
 

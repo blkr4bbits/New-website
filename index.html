@@ -16,7 +16,6 @@
 
 <body>
 
-    <!-- background video -->
     
         <video id="bg-video" autoplay muted playsinline></video>
 
@@ -42,17 +41,15 @@
 
             
             if (index >= videos.length) {
-                index = 1; // lock to second video
+                index = 1; 
             }
 
             playVideo(index);
             });
 
-            // start with first video
             playVideo(0);
         </script>
 
-    <!-- theme switch button -->
 
     
     <button id = "theme-switch">
@@ -67,13 +64,11 @@
             class = "card-body">
         </div>
 
-        <!--greeting page-->
 
         <p class="text-center">
-            hi! <span class="text-primary font-Persona3">i’m Ivory</span>
+            hi! <span class="text-primary">i’m Ivory</span>
         </p> 
 
-        <!-- content for main page starts here-->
 
             <main id = "content" class = "hidden"></main> 
 
@@ -81,12 +76,12 @@
             <ul>
                 <button class = "work-button"><a href = "https://github.com/blkr4bbits" targert = "_blank">WORK</a></button>
                 <button class = "home-button"><a href = "https://mail.google.com" target = "_blank">CONTACT</a></button>
-                <button class = "about-button"><a href = "../New-website/About/about.html">ABOUT</a></button>
+                <button class = "about-button"><a href = "./About/about.html">ABOUT</a></button>
                 <button class = "resume-button"><a href  = "Assets/Ivory Resume - 2026 (3).pdf" target = "_blank">RESUME</a></button>
             </ul>
         </div>
 
-        <p class = "Copyright-title">&copy; 2026 Ivory Naomi </p>
+        <p class = "Copyright-title">&copy; 2026 Ivory </p>
 
     </div>
 
