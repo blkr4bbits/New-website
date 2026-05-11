@@ -3,7 +3,7 @@
   src: url(../New-website/Assets/BMSPA___.TTF) format("truetype");
 
   font-family: 'SecondaryFont';
-  src: url(../Assets/FOT-Skip\ Std\ B.otf) format("opentype");
+  src: url(./Assets/FOT-Skip\ Std\ B.otf) format("opentype");
 }
 
 p {
